@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favorite programming language</title>
+    <script>
+        function cheackFavoriteLanguage(){
+            const favoriteLanguage=prompt("Please enter favorite programming Language");
+            if(favoriteLanguage !== null){
+                const cleanedInput = favoriteLanguage.trim().toLowerCase();
+                if(cleanedInput ==="javasript"){
+                    alert("You have good taste!")
+                } else{
+                    alert("That's nice, but javascript is the best!")
+                }
+            }
+        }
+        window.onload=cheackFavoriteLanguage;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
