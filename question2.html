@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age confirmation</title>
+    <script>
+        function askForAge(){
+            const age = prompt("Please enter ur age:");
+            if(age !== null && age.trim() !== ""){
+                const isConfirmed = confirm("are u sure " +age+ " age is your real age?");
+                if (isConfirmed){
+                    alert("Great!let's continue ");
+                }else{
+                    alert("opps! lets try again");
+                    askForAge();
+                }
+            } else {
+                alert("Please enter valid age:");
+                askForAge();
+            }
+        }
+
+        window.onload = askForAge;
+    </script>
+    <!--<script>
+        function askForAge() {
+            const age = prompt("Please enter your age:");
+            if (age !== null && age.trim() !== "") {
+                const isConfirmed = confirm("Are you sure " + age + " is your real age?");
+                if (isConfirmed) {
+                    alert("Great! Let's continue.");
+                } else {
+                    alert("Oops! Let's try again.");
+                    askForAge(); // Ask for the age again if not confirmed
+                }
+            } else {
+                alert("Please enter a valid age.");
+                askForAge(); // Ask for the age again if not provided or empty
+            }
+        }
+
+        window.onload = askForAge;
+    </script>-->
+</head>
+<body>
+
+    
+</body>
+</html>

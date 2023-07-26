@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+</head>
+<body>
+    <script>
+        function quiz(){
+            let score=0;
+            const answer1=prompt("Question 1: Who is our prime minister \nA.soniya gandi \nB.narendra modi \nc.indira gandi");
+            if(answer1 !==null && answer1.toLowerCase() === "b"){
+                score++;
+            };
+            const answer2=prompt("Question 2: Who is our cheif minister  \nA.Manoj \nB.Kumar \nC.y.s jagan mohan reddy");
+            if(answer2 !==null && answer2.toLowerCase() === "c"){
+                score++;
+            }
+            const answer3=prompt("Question 3: How many colors in rainbow \nA.5 \nB.4 \nC.7");
+            if(answer3 !==null && answer3.toLowerCase() === "c"){
+                score++;
+            }
+            alert("your total score is "+score);
+
+        }
+        window.onload=quiz;
+    </script>
+    
+</body>
+</html>
